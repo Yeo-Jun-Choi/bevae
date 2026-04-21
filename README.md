@@ -1,6 +1,6 @@
-# BEVAE
+# BE-VAE
 
-Official implementation of **BEVAE**, a Variational Autoencoder for multi-behavior recommendation.
+Official implementation of **BE-VAE**, a Variational Autoencoder for multi-behavior recommendation.
 
 
 ---
@@ -37,7 +37,7 @@ Run with default hyperparameters on Taobao:
 python src/main_bevae.py --dataset taobao --device cuda:0
 ```
 
-This will train BEVAE, early-stop on validation NDCG@10, save the best checkpoint to
+This will train BE-VAE, early-stop on validation NDCG@10, save the best checkpoint to
 `./checkpoint_bevae/taobao/model.pt`, then report test HR@{10,20,50,100} and NDCG@{10,20,50,100}.
 
 
