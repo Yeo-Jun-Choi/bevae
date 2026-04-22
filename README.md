@@ -43,18 +43,10 @@ This will train BE-VAE, early-stop on validation NDCG@10, save the best checkpoi
 
 ## Training
 
-Typical invocation with a custom configuration:
+Run train.sh to train BE-VAE for all datasets.
 
 ```bash
-python src/main_bevae.py \
-    --dataset taobao \
-    --device cuda:0 \
-    --lr 1e-4 \
-    --hidden_dims 1024 \
-    --latent_dim 128 \
-    --beta 1e-4 \
-    --behavior_weight 10 \
-    --baserate_scale 1.0 \
+bash train.sh
 ```
 
 ---

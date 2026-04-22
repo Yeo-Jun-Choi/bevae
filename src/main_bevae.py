@@ -16,7 +16,7 @@ def parse_args():
     parser.add_argument('--checkpoint_dir', type=str, default='./checkpoint_bevae', help='Directory of model checkpoint')
     parser.add_argument('--load_checkpoint', action='store_true', help='Load model checkpoint')
     parser.add_argument('--batch_size', type=int, default=1024, help='Batch size')
-    parser.add_argument('--lr', type=float, default=1e-3, help='Learning rate')
+    parser.add_argument('--lr', type=float, default=1e-4, help='Learning rate')
     parser.add_argument('--weight_decay', type=float, default=0.0, help='Weight decay')
     parser.add_argument('--hidden_dims', type=int, nargs='+', default=[1024], help='Hidden layer dimensions (e.g. --hidden_dims 1024 512)')
     parser.add_argument('--latent_dim', type=int, default=128, help='Latent dimension')
